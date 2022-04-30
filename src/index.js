@@ -34,3 +34,18 @@ orderBtn.addEventListener('click', () => {
     ordered = false;
   }
 });
+
+//ingredience jako komponenty
+
+import { Layer } from './Layer/index.js';
+
+const cappuccino = [
+  { color: '#feeeca', label: 'mléčná pěna' },
+  { color: '#fed7b0', label: 'teplé mléko' },
+  { color: '#613916', label: 'espresso' },
+];
+
+const drinkInfo = document.querySelector('.drink__info');
+for (let i = 0; i < cappuccino.length; i += 1) {
+  drinkInfo.appendChild(Layer(cappuccino[i]));
+}
