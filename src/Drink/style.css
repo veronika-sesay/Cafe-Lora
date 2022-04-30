@@ -1,3 +1,11 @@
+.drinks-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  margin-bottom: 4rem;
+}
+
 .drink {
   display: flex;
   flex-direction: column;
@@ -38,4 +46,16 @@
   margin-top: 1rem;
 
   text-align: center;
+}
+
+@media (min-width: 576px) {
+  .drink {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .drink {
+    width: 33.333%;
+  }
 }
